@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FoodOrderingAppVersion10" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <style name="RoundedBottomCorners">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomLeft">180dp</item>
+        <item name="cornerSizeBottomRight">180dp</item>
+    </style>
+
+
+    <style name="Theme.FoodOrderingAppVersion10" parent="Base.Theme.FoodOrderingAppVersion10" />
+</resources>

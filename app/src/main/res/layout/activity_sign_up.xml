@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logomain" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rocker"
+        android:text="Waves of Food"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merianda_bold"
+        android:text="Deliver Your Favourite Food"
+        android:textColor="#e8b23e"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merianda_bold"
+        android:text="Sign Up Here"
+        android:textColor="#e8b23e"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editextback"
+        android:drawableLeft="@drawable/user_01"
+        android:drawablePadding="10dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/regular"
+        android:hint="Enter Your Name"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#60000000"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editextback"
+        android:drawableLeft="@drawable/lock_01"
+        android:drawablePadding="10dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/regular"
+        android:hint="Enter Password"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#60000000"
+        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editextback"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/regular"
+        android:hint="Enter Email"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#60000000"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/merianda_bold"
+        android:text="Or"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress2"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merianda_bold"
+        android:text="Continue With"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton3"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/editextback"
+        android:drawableLeft="@drawable/google_icon_2"
+        android:elevation="5dp"
+        android:fontFamily="@font/rocker"
+        android:paddingLeft="15dp"
+        android:paddingRight="25dp"
+        android:textSize="22dp"
+        android:text="Google"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/appCompatButton2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton2"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/editextback"
+        android:drawableLeft="@drawable/facebook_3_1"
+        android:elevation="5dp"
+        android:paddingRight="10dp"
+        android:textSize="22dp"
+        android:fontFamily="@font/rocker"
+        android:paddingLeft="10dp"
+        android:text="Facebook"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/appCompatButton3"
+        app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/green_btn"
+        android:elevation="10dp"
+        android:fontFamily="@font/rocker"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton3">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <TextView
+
+        android:id="@+id/haveaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/regular"
+        android:padding="2dp"
+        android:text="Already have a Account?"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/signup"
+        app:layout_constraintStart_toStartOf="@+id/signup"
+        app:layout_constraintTop_toBottomOf="@+id/signup" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rocker"
+        android:gravity="center"
+        android:text="Design By \nNext Decode"
+        android:textColor="#e8b23e"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/haveaccount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

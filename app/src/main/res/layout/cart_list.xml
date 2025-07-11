@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/buyagainImg"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/buyagainPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/rocker"
+                android:padding="5dp"
+                android:text="$27"
+                android:textColor="#e8b23e"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/buyagainName"
+                app:layout_constraintEnd_toEndOf="@+id/buyagainName"
+                app:layout_constraintStart_toEndOf="@+id/buyagainImg"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/buyagainName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="TextView"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/buyagainImg"
+                app:layout_constraintTop_toBottomOf="@+id/buyagainPrice" />
+
+            <ImageView
+                android:id="@+id/addcartbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/cart_btn"
+                android:contentDescription="add_btn"
+                android:src="@drawable/add"
+                android:text="Button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.355" />
+
+            <ImageView
+                android:id="@+id/minuscartbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/cart_btn"
+                android:contentDescription="substract_btn"
+                android:src="@drawable/substract"
+                app:layout_constraintBottom_toBottomOf="@+id/CartItemQuantity"
+                app:layout_constraintEnd_toStartOf="@+id/CartItemQuantity"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/buyagainPrice"
+                app:layout_constraintTop_toTopOf="@+id/CartItemQuantity"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/CartItemQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/addcartbtn"
+                app:layout_constraintEnd_toStartOf="@+id/addcartbtn"
+                app:layout_constraintTop_toTopOf="@+id/addcartbtn"
+                app:layout_constraintVertical_bias="0.545" />
+
+            <ImageView
+                android:id="@+id/cartDeletebtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:contentDescription="deletionbtn"
+                android:src="@drawable/delete"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/addcartbtn"
+                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintStart_toStartOf="@+id/minuscartbtn"
+                app:layout_constraintTop_toBottomOf="@+id/CartItemQuantity"
+                app:layout_constraintVertical_bias="0.388" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

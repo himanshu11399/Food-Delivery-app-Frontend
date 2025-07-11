@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Home"
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home_active">
+
+    </item>
+    <item android:title="Cart"
+        android:id="@+id/cartFragment"
+        android:icon="@drawable/notification_cart"
+        app:showAsAction="never">
+
+    </item>
+    <item android:title="Search"
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/search_refraction">
+
+    </item>
+    <item android:title="History"
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/history">
+
+    </item>
+    <item android:title="Profile"
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/user_01">
+
+    </item>
+</menu>
